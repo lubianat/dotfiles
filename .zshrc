@@ -102,3 +102,6 @@ source ~/.bash_profile
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 alias gcl='git clone --recurse-submodules'
+alias tt='tmux attach -t'
+alias td='tmux detach'
+alias tn='tmux new -s'
