@@ -7,3 +7,5 @@ sudo apt install ./slack-desktop-*.deb
 # Install Oh My Zsh
 sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
+# Install venv
+apt install python3-venv -y
