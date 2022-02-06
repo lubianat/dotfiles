@@ -105,3 +105,6 @@ alias gcl='git clone --recurse-submodules'
 alias tt='tmux attach -t'
 alias td='tmux detach'
 alias tn='tmux new -s'
+
+# Turn off all beeps
+unsetopt BEEP
