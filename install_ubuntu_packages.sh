@@ -23,3 +23,6 @@ sudo sed -i 's/# set bell-style none/set bell-style none/g' /etc/inputrc
 
 # Install node and yarn
 sudo apt install nodejs yarn -y
+
+# Install inkscape
+sudo apt install inkscape -y
