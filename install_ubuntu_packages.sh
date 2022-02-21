@@ -26,3 +26,6 @@ sudo apt install nodejs yarn -y
 
 # Install inkscape
 sudo apt install inkscape -y
+
+# Install gparted (to manage flashdrives)
+sudo apt install gparted -y
