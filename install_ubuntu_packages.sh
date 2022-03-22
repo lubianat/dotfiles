@@ -29,3 +29,19 @@ sudo apt install inkscape -y
 
 # Install gparted (to manage flashdrives)
 sudo apt install gparted -y
+
+# Install htop
+sudo apt install htop -y
+
+# Install libreoffice
+sudo apt-get install libreoffice libreoffice-style-breeze -y
+
+# Install calibre
+sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
+
+# Install BB security module
+
+TEMP_DEB="$(mktemp)" &&
+wget -O "$TEMP_DEB" 'https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.deb' &&
+sudo dpkg -i "$TEMP_DEB"
+rm -f "$TEMP_DEB"
