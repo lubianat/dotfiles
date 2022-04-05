@@ -45,3 +45,6 @@ TEMP_DEB="$(mktemp)" &&
 wget -O "$TEMP_DEB" 'https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.deb' &&
 sudo dpkg -i "$TEMP_DEB"
 rm -f "$TEMP_DEB"
+
+# Install Protege 
+# See https://protegewiki.stanford.edu/wiki/Install_Protege5_Linux

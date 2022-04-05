@@ -1,0 +1,8 @@
+{
+    "security.workspace.trust.untrustedFiles": "open",
+    "editor.formatOnSave": true,
+    "explorer.confirmDelete": false,
+    "liveServer.settings.donotVerifyTags": true,
+    "python.formatting.provider": "black",
+    "window.zoomLevel": 1
+}
