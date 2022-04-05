@@ -78,6 +78,9 @@ pip3 install virtualenv
 virtualenv -p python3.10.4 main_venv
 source main_venv/bin/activate 
 
+# Install main virtualenv requirements
+pip3 install -r dotfiles/main_venv_requirements.txt
+
 # Install vscode
 TEMP_DEB="$(mktemp)" &&
 wget -O "$TEMP_DEB" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" &&
