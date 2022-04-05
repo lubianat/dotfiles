@@ -78,6 +78,19 @@ pip3 install virtualenv
 virtualenv -p python3.10.4 main_venv
 source main_venv/bin/activate 
 
+# Install vscode
+TEMP_DEB="$(mktemp)" &&
+wget -O "$TEMP_DEB" "https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64" &&
+sudo dpkg -i "$TEMP_DEB"
+rm -f "$TEMP_DEB"
+
+# Install Google Chrome
+TEMP_DEB="$(mktemp)" &&
+wget -O "$TEMP_DEB"  "https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb" &&
+sudo dpkg -i "$TEMP_DEB"
+rm -f "$TEMP_DEB"
+
+
 #Update GNOME version (https://www.linuxcapable.com/how-to-install-gnome-41-desktop-on-ubuntu-20-04/)
 sudo apt install software-properties-common -y
 sudo add-apt-repository ppa:devacom/x11 -y
@@ -87,3 +100,5 @@ sudo apt-get update
 sudo apt install ubuntu-desktop gnome-shell gnome-control-center -y
 sudo apt upgrade
 sudo reboot
+
+
