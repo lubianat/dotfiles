@@ -115,6 +115,8 @@ sudo sed -i 's/# set bell-style none/set bell-style none/g' /etc/inputrc
 cd /usr/share/X11/xkb/symbols
 sudo wget -O camelo https://raw.githubusercontent.com/lubianat/camelo/main/camelo
 sudo dpkg-reconfigure xkb-data
+cd /usr/share/X11/xkb/rules
+sudo wget -O evdev.xml https://raw.githubusercontent.com/lubianat/camelo/main/evdev.xml
 setxkbmap -option grp:alt_shift_toggle camelo,pt
 
 # Install Protege Ontology Editor
