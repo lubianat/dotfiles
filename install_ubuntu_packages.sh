@@ -2,6 +2,9 @@
 
 sudo 
 
+# Install git
+sudo apt install git
+
 # Install zsh
 sudo apt install zsh
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
@@ -33,6 +36,20 @@ sudo apt install inkscape -y
 
 # Install gparted (to manage flashdrives)
 sudo apt install gparted -y
+
+# Make directories
+mkdir lab_related wiki_related random 
+
+# Import core repositories
+
+cd wiki_related 
+gh repo clone lubianat/wikidata_bib
+gh repo clone lubianat/wikidata_cell_curation
+gh repo clone lubianat/numista2wikidata
+gh repo clone lubianat/coin_herbarium
+gh repo clone lubianat/
+gh repo clone lubianat/wiki_convida
+
 
 # Install htop
 sudo apt install htop -y
@@ -74,7 +91,10 @@ sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 
 # Set up main virtualenv
+sudo apt install python3-pip -y
 pip3 install virtualenv
+sudo apt install python3-virtualenv -y
+
 virtualenv -p python3.10.4 main_venv
 source main_venv/bin/activate 
 
