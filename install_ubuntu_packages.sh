@@ -51,3 +51,38 @@ rm -f "$TEMP_DEB"
 
 # Install Protege 
 # See https://protegewiki.stanford.edu/wiki/Install_Protege5_Linux
+
+# Configure mouse wheel copy
+sudo apt-get install gnome-tweaks
+echo "xterm*selectToClipboard: true" >> ~/.Xresources
+
+# Install GitHub CLI
+TEMP_DEB="$(mktemp)" &&
+wget -O "$TEMP_DEB" 'https://github.com/cli/cli/releases/download/v2.7.0/gh_2.7.0_linux_amd64.deb' &&
+sudo dpkg -i "$TEMP_DEB"
+rm -f "$TEMP_DEB"
+
+gh auth login
+gh repo clone lubianat/dotfiles
+mv dotfiles/.zshrc ~/.zshrc
+
+# Install Python 3.10
+sudo add-apt-repository ppa:deadsnakes/ppa
+sudo apt update
+sudo apt install python3.10 -y
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 2
+sudo apt install python3.10-distutils -y
+curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+
+# Set up main virtualenv
+python3 -m pip install -r dotfiles/python_requirements.txt
+sudo apt remove --purge python3-apt
+sudo apt autoclean
+sudo apt install python3-apt
+
+python3 -m virtualenv main_venv
+source main_venv/bin/activate 
+
+#Update GNOME version
+sudo add-apt-repository ppa:gnome3-team/gnome3-staging
+sudo add-apt-repository ppa:gnome3-team/gnome3
