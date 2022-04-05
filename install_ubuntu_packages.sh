@@ -2,6 +2,10 @@
 
 sudo 
 
+# Install zsh
+sudo apt install zsh
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
 # Install Slack
 sudo snap install slack --classic
 
@@ -40,7 +44,6 @@ sudo apt-get install libreoffice libreoffice-style-breeze -y
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
 
 # Install BB security module
-
 TEMP_DEB="$(mktemp)" &&
 wget -O "$TEMP_DEB" 'https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.deb' &&
 sudo dpkg -i "$TEMP_DEB"
