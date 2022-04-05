@@ -1,0 +1,10 @@
+wbib
+inquirer
+pandas
+pyyaml
+beautifulsoup4
+mdutils
+rdflib
+wbib
+wikidataintegrator
+chardet
