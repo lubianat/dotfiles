@@ -71,18 +71,19 @@ sudo add-apt-repository ppa:deadsnakes/ppa
 sudo apt update
 sudo apt install python3.10 -y
 sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 2
-sudo apt install python3.10-distutils -y
-curl -sS https://bootstrap.pypa.io/get-pip.py | python3.10
+sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
 
 # Set up main virtualenv
-python3 -m pip install -r dotfiles/python_requirements.txt
-sudo apt remove --purge python3-apt
-sudo apt autoclean
-sudo apt install python3-apt
-
-python3 -m virtualenv main_venv
+pip3 install virtualenv
+virtualenv -p python3.10.4 main_venv
 source main_venv/bin/activate 
 
-#Update GNOME version
-sudo add-apt-repository ppa:gnome3-team/gnome3-staging
-sudo add-apt-repository ppa:gnome3-team/gnome3
+#Update GNOME version (https://www.linuxcapable.com/how-to-install-gnome-41-desktop-on-ubuntu-20-04/)
+sudo apt install software-properties-common -y
+sudo add-apt-repository ppa:devacom/x11 -y
+sudo add-apt-repository ppa:devacom/gnome-40 -y
+sudo add-apt-repository ppa:devacom/gnome-41 -y
+sudo apt-get update
+sudo apt install ubuntu-desktop gnome-shell gnome-control-center -y
+sudo apt upgrade
+sudo reboot
