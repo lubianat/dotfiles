@@ -93,15 +93,4 @@ wget -O "$TEMP_DEB"  "https://dl.google.com/linux/direct/google-chrome-stable_cu
 sudo dpkg -i "$TEMP_DEB"
 rm -f "$TEMP_DEB"
 
-: '
-#Update GNOME version (https://www.linuxcapable.com/how-to-install-gnome-41-desktop-on-ubuntu-20-04/)
-sudo apt install software-properties-common -y
-sudo add-apt-repository ppa:devacom/x11 -y
-sudo add-apt-repository ppa:devacom/gnome-40 -y
-sudo add-apt-repository ppa:devacom/gnome-41 -y
-sudo apt-get update
-sudo apt install ubuntu-desktop gnome-shell gnome-control-center -y
-sudo apt upgrade -y
-sudo reboot
-'
 
