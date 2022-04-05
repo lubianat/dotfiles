@@ -83,24 +83,25 @@ sudo sed -i 's/# set bell-style none/set bell-style none/g' /etc/inputrc
 
 
 # Install Python 3.10. Note: do NOT set is as base python
-sudo add-apt-repository ppa:deadsnakes/ppa
-sudo apt update
-sudo apt install python3.10 -y
-sudo apt-get install python3.10-distutils -y
-sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 2
-sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
-sudo update-alternatives  --set python3 /usr/bin/python3.8
+#sudo add-apt-repository ppa:deadsnakes/ppa
+#sudo apt update
+#sudo apt install python3.10 -y
+#sudo apt-get install python3.10-distutils -y
+#sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.10 2
+#sudo update-alternatives --install /usr/bin/python3 python3 /usr/bin/python3.8 1
+#sudo update-alternatives  --set python3 /usr/bin/python3.8
 
-sudo apt install python3-pip -y
+#sudo apt install python3-pip -y
 pip3 install virtualenv
 sudo apt install python3-virtualenv -y
 
 # Set up virtual environment
-python3 -m virtualenv -p python3.10.4 main_venv --no-pip
+#python3 -m virtualenv -p python3.10.4 main_venv --no-pip
+python3 -m virtualenv main_venv
 source $basedir/main_venv/bin/activate 
-curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
-python3.10 get-pip.py      
-rm get-pip.py
+#curl https://bootstrap.pypa.io/get-pip.py -o get-pip.py 
+#python3.10 get-pip.py      
+#rm get-pip.py
 
 pip3 install -r $basedir/random/dotfiles/main_venv_requirements.txt
  

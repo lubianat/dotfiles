@@ -1,3 +1,4 @@
+wheel
 wbib
 inquirer
 pandas
@@ -8,3 +9,5 @@ rdflib
 wbib
 wikidataintegrator
 chardet
+requests
+clipboard
