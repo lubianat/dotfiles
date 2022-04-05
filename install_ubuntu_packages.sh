@@ -2,6 +2,9 @@
 
 sudo 
 
+# Install curl 
+sudo apt install curl -y
+
 # Install git
 sudo apt install git -y
 
