@@ -3,10 +3,10 @@
 sudo 
 
 # Install git
-sudo apt install git
+sudo apt install git -y
 
 # Install zsh
-sudo apt install zsh
+sudo apt install zsh -y
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Install Slack
