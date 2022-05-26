@@ -9,17 +9,21 @@ basedir="/home/lubianat/Documents"
 AptPackage="curl git zsh 
 telegram-desktop python3-venv 
 nodejs yarn inkscape gparted 
-htop libreoffice libreoffice-style-breeze"
+htop libreoffice libreoffice-style-breeze 
+xclip npm openssh-server putty-tools rsync"
 
 for i in $AptPackage; do
   sudo apt install $i -y
 done
+exit
 
 git config --global user.email "tiago.lubiana.alves@usp.br"
 git config --global user.name "Tiago Lubiana"
 
 # BB Security Module, GitHub CLI, GitHub Desktop VScode, Google Chrome
-Urls='https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.deb
+Urls='
+https://zoom.us/client/latest/zoom_amd64.deb
+https://cloud.gastecnologia.com.br/bb/downloads/ws/warsaw_setup64.deb
 https://github.com/cli/cli/releases/download/v2.7.0/gh_2.7.0_linux_amd64.deb
 https://github.com/shiftkey/desktop/releases/download/release-2.9.12-linux4/GitHubDesktop-linux-2.9.12-linux4.deb 
 https://code.visualstudio.com/sha/download?build=stable&os=linux-deb-x64
@@ -147,3 +151,16 @@ echo '=========================='
 
 read -p 'Ok?' nothing
 
+# Install Visual Studio Code extensions
+
+code --install-extension ms-python.python
+code --install-extension Zazuko.sparql-snippets
+code --install-extension Zazuko.sparql-notebook
+code --install-extension danwhitfield.sparql-executor
+code --install-extension mechatroner.rainbow-csv
+code --install-extension ritwickdey.LiveServer
+code --install-extension eamodio.gitlens                
+code --install-extension stardog-union.stardog-rdf-grammars
+code --install-extension cstrap.python-snippets
+code --install-extension PascalReitermann93.vscode-yaml-sort
+cp ~/Documents/random/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json

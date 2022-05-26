@@ -11,3 +11,10 @@ wikidataintegrator
 chardet
 requests
 clipboard
+openpyxl
+dataclasses
+black
+twine
+pywikibot
+mwparserfromhell
+advertools
