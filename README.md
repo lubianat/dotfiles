@@ -15,3 +15,5 @@ gh auth login
 cd dotfiles
 bash install_ubuntu_packages.sh
 ```
+
+- Set up [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh). 
