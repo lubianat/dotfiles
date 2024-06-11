@@ -109,7 +109,4 @@ setxkbmap -option grp:alt_shift_toggle camelo,pt
 # Install Zotero
 cd ~ && curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
 
-# Install RawTherapee using flatpak
-flatpak install https://dl.flathub.org/repo/appstream/com.rawtherapee.RawTherapee.flatpakref
-
 cp ~/Documents/random/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
