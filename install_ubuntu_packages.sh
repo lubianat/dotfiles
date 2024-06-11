@@ -12,7 +12,6 @@ xclip npm openssh-server putty-tools rsync flatpak"
 for i in $AptPackage; do
   sudo apt install $i -y
 done
-exit
 
 git config --global user.email "tiago.lubiana.alves@usp.br"
 git config --global user.name "Tiago Lubiana"
