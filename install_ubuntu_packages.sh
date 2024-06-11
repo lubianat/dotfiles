@@ -43,7 +43,7 @@ logout
 mkdir wiki_related lab_related random
 
 # Import core repositories
-LabRepos=" gene-wordle bioinfo_brasil"
+LabRepos="wikidata_cell_curation"
 cd $basedir/lab_related 
 for val in $LabRepos; do
     gh repo clone lubianat/$val
@@ -51,7 +51,7 @@ for val in $LabRepos; do
 done
 
 
-WikiRepos="wikidata_cell_curation inat2wiki"
+WikiRepos="inat2wiki"
 cd $basedir/wiki_related 
 for val in $WikiRepos; do
     gh repo clone lubianat/$val
