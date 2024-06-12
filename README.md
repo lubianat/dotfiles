@@ -16,4 +16,5 @@ cd dotfiles
 bash install_ubuntu_packages.sh
 ```
 
-- Set up [ohmyzsh](https://github.com/ohmyzsh/ohmyzsh). 
+- Manually sync zotero
+- Manually activate camelô keyboard
