@@ -110,3 +110,5 @@ setxkbmap -option grp:alt_shift_toggle camelo,pt
 cd ~ && curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
 
 cp ~/Documents/random/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
+
+sudo snap install slack
