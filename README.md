@@ -19,3 +19,8 @@ bash install_ubuntu_packages.sh
 
 - Manually sync zotero
 - Manually activate camelô keyboard
+
+
+Config Mozilla extensions
+
+https://addons.mozilla.org/en-US/firefox/addon/add-custom-search-engine/ and set Wikidata as the search engine
