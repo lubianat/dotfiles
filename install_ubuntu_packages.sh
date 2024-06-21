@@ -1,6 +1,7 @@
 #!/bin/bash
 
 basedir="/home/lubianat/Documents"
+cd basedir
 
 # Install apt programs
 AptPackage="curl git zsh 
@@ -15,6 +16,7 @@ done
 
 git config --global user.email "tiago.lubiana.alves@usp.br"
 git config --global user.name "Tiago Lubiana"
+git config --global init.defaultBranch main 
 
 # BB Security Module, GitHub CLI, GitHub Desktop VScode, Google Chrome
 Urls='
