@@ -3,6 +3,7 @@
 - Install GitHub CLI:
 
 ```
+sudo apt install git
 sudo apt  install gh
 gh auth login
 ```
