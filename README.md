@@ -19,6 +19,9 @@ bash install_ubuntu_packages.sh
 
 - Manually sync zotero
 - Manually activate camelô keyboard
+- Manually sync slack
+- Login into ChatGPT
+- Setup proton VPN (todo)
 
 
 Config Mozilla extensions
