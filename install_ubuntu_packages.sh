@@ -1,7 +1,7 @@
 #!/bin/bash
 
 basedir="/home/lubianat/Documents"
-cd basedir
+cd $basedir
 
 # Install apt programs
 AptPackage="curl git zsh 
