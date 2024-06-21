@@ -94,6 +94,8 @@ setxkbmap -option grp:alt_shift_toggle camelo,pt
 
 # Install Zotero
 cd ~ && curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/install.sh | sudo bash
+sudo apt update
+sudo apt install zotero
 
 cp ~/Documents/random/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
 
