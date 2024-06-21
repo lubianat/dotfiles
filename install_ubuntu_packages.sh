@@ -71,8 +71,6 @@ cp $basedir/random/dotfiles/.zshrc ~/.zshrc
 
 # Install calibre
 sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin
-# Install Oh My Zsh
-sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 
 # Remove annoying beep sounds
 sudo sed -i 's/# set bell-style none/set bell-style none/g' /etc/inputrc
@@ -112,3 +110,7 @@ cd ~ && curl -sL https://raw.githubusercontent.com/retorquere/zotero-deb/master/
 cp ~/Documents/random/dotfiles/vscode/settings.json ~/.config/Code/User/settings.json
 
 sudo snap install slack
+
+# Install Oh My Zsh
+sh -c "$(curl -fsSL https://raw.github.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+
