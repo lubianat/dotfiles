@@ -29,3 +29,6 @@ Config Mozilla extensions
 https://addons.mozilla.org/en-US/firefox/addon/add-custom-search-engine/ and set Wikidata as the search engine
 https://addons.mozilla.org/en-US/firefox/addon/darkreader/
 https://addons.mozilla.org/pt-BR/firefox/addon/ublock-origin/
+https://addons.mozilla.org/en-US/firefox/addon/unpaywall/
+
+and Zotero connector: https://www.zotero.org/download/ 
