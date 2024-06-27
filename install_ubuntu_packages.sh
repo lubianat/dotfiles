@@ -6,7 +6,7 @@ cd $basedir
 # Install apt programs
 AptPackage="curl git zsh 
 telegram-desktop python3-venv 
-nodejs yarn inkscape gparted 
+nodejs yarn inkscape gparted fuse
 htop libreoffice libreoffice-style-breeze 
 xclip npm openssh-server putty-tools rsync flatpak"
 
